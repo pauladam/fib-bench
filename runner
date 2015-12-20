@@ -1,0 +1,13 @@
+#!/usr/bin/ruby
+
+`./make`
+
+steps = [5, 10, 15, 20 , 25, 30, 35, 40, 45]
+binaries = ['fib-crystal', 'fib-go', 'fib.py', 'fib.rb'] 
+steps.each do |step|
+    puts "\nstarting step #{step}"
+    binaries.each do |bin|
+        puts "%s" % bin
+        puts `time ./#{bin} #{step}`
+    end
+end
