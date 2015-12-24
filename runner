@@ -4,17 +4,17 @@ require 'pp'
 
 `./make`
 
-steps = (1..35)
+steps = (1..50)
 binaries = ['fib-crystal', 'fib-go', 'fib.py', 'fib.rb', 'fib-nim'] 
 cols = ["lang", "fib(n)", "result", "real", "user", "sys"]
-puts cols.join(", ")
+puts cols.join(",\t")
 steps.each do |step|
     binaries.each do |bin|
         output_list = `/usr/bin/time -p ./#{bin} #{step} 2>&1`.split("\n")
         result = output_list[0].split(",").last.to_i
         output_list.shift
         real, user, sys = output_list.map{ |t| t.split(/\s+/)[-1].to_f }
-        puts [bin, step, result, real, user, sys].join(", ")
+        puts printf("%12s, %d, %d, %.2f, %.2f, %.2f" % [bin, step, result, real, user, sys])
     end
 end
 puts
