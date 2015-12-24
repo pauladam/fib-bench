@@ -1,13 +1,20 @@
 #!/usr/bin/ruby
 
-`./make`
+require 'pp'
 
-steps = [5, 10, 15, 20 , 25, 30, 35, 40, 45]
-binaries = ['fib-crystal', 'fib-go', 'fib.py', 'fib.rb'] 
+`make`
+
+steps = (1..35)
+binaries = ['fib-crystal', 'fib-go', 'fib.py', 'fib.rb', 'fib-nim'] 
+cols = ["lang", "step", "result", "real", "user", "sys"]
+puts cols.join(", ")
 steps.each do |step|
-    puts "\nstarting step #{step}"
     binaries.each do |bin|
-        puts "%s" % bin
-        puts `time ./#{bin} #{step}`
+        output_list = `/usr/bin/time -p ./#{bin} #{step} 2>&1`.split("\n")
+        result = output_list[0].split(",").last.to_i
+        output_list.shift
+        real, user, sys = output_list.map{ |t| t.split(/\s+/)[-1].to_f }
+        puts [bin, step, result, real, user, sys].join(", ")
     end
 end
+puts

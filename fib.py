@@ -12,4 +12,4 @@ def fib(n):
 if __name__ == "__main__":
 
     n = int(sys.argv[1])
-    print n, fib(n)
+    print "%d, %d" % (n, fib(n))

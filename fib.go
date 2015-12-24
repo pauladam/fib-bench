@@ -17,5 +17,5 @@ func fib(n int) int {
 
 func main() {
 	n, _ := strconv.Atoi(os.Args[1])
-	fmt.Printf("%d %d\n", n, fib(n))
+	fmt.Printf("%d, %d\n", n, fib(n))
 }

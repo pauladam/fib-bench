@@ -7,4 +7,7 @@
 
 ![](https://raw.githubusercontent.com/pauladam/fib-bench/master/results.png)
 
+# TODO
 
+- Formulate results as a csv
+- Automatically generate plots based on results
