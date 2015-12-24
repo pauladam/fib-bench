@@ -6,7 +6,7 @@ require 'pp'
 
 steps = (1..35)
 binaries = ['fib-crystal', 'fib-go', 'fib.py', 'fib.rb', 'fib-nim'] 
-cols = ["lang", "step", "result", "real", "user", "sys"]
+cols = ["lang", "fib(n)", "result", "real", "user", "sys"]
 puts cols.join(", ")
 steps.each do |step|
     binaries.each do |bin|
