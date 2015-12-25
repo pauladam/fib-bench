@@ -8,6 +8,6 @@
 
 ![](https://raw.githubusercontent.com/pauladam/fib-bench/master/results.png)
 
-<iframe src='https://raw.githubusercontent.com/pauladam/fib-bench/master/benchmark.html'>
+<iframe src='https://raw.githubusercontent.com/pauladam/fib-bench/master/benchmark.html'></iframe>
 
 # TODO
