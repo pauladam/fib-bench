@@ -4,10 +4,8 @@
 - [Python](https://www.python.org/)
 - [Ruby](https://www.ruby-lang.org/en/)
 - [Crystal](http://crystal-lang.org/)
+- [Rust](https://www.rust-lang.org/)
 
 ![](https://raw.githubusercontent.com/pauladam/fib-bench/master/results.png)
 
 # TODO
-
-- Add Rust results to csv
-- Automatically generate plots based on results
