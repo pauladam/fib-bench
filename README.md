@@ -8,6 +8,6 @@
 
 ![](https://raw.githubusercontent.com/pauladam/fib-bench/master/results.png)
 
-[Results](http://htmlpreview.github.com/?https://raw.githubusercontent.com/pauladam/fib-bench/master/benchmark.html)
+[Interactive results](http://htmlpreview.github.com/?https://raw.githubusercontent.com/pauladam/fib-bench/master/benchmark.html)
 
 # TODO
