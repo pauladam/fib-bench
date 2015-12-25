@@ -2,9 +2,7 @@
 
 require 'pp'
 
-`./make`
-
-steps = (1..10)
+steps = (1..45)
 binaries = ['fib-crystal', 'fib-go', 'fib.py', 'fib.rb', 'fib-nim', 'fib-rust']
 cols = ["lang", "fib(n)", "result", "real", "user", "sys"]
 puts cols.join(",\t")
@@ -17,4 +15,3 @@ steps.each do |step|
         puts printf("%12s, %d, %d, %.2f, %.2f, %.2f" % [bin, step, result, real, user, sys])
     end
 end
-puts
