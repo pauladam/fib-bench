@@ -4,8 +4,8 @@ require 'pp'
 
 `./make`
 
-steps = (1..50)
-binaries = ['fib-crystal', 'fib-go', 'fib.py', 'fib.rb', 'fib-nim'] 
+steps = (1..10)
+binaries = ['fib-crystal', 'fib-go', 'fib.py', 'fib.rb', 'fib-nim', 'fib-rust']
 cols = ["lang", "fib(n)", "result", "real", "user", "sys"]
 puts cols.join(",\t")
 steps.each do |step|

@@ -9,6 +9,5 @@
 
 # TODO
 
-- Add Rust
-- Formulate results as a csv
+- Add Rust results to csv
 - Automatically generate plots based on results
