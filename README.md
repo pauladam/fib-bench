@@ -10,4 +10,7 @@
 
 [Interactive results](http://htmlpreview.github.com/?https://raw.githubusercontent.com/pauladam/fib-bench/master/benchmark.html)
 
-# TODO
+### TODO
+
+- Stop running slow langs after some cutoff (eg 800 sec)
+- Re-use existing benchmark values
